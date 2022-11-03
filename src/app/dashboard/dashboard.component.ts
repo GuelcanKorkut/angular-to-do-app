@@ -19,6 +19,13 @@ export class DashboardComponent implements OnInit {
 
   addItem(title: string): void {
     this.todoListService.addItem({ title });
-} 
+  }
 
+  removeItem(item: TodoItem): void {
+    this.todoListService.deleteItem(item);
+  }
+  
+  updateItem(item: TodoItem, changes: any): void {
+    this.todoListService.updateItem(item, changes);
+  }
 }
