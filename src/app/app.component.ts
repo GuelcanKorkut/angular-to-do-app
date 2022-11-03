@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'Angular To-do list';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+
 }
