@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TodoItemComponent } from './todo-item/todo-item.component';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TodoListService } from './services/todo-list.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [TodoListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
