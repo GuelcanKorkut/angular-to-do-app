@@ -1,9 +1,9 @@
 <div class="todo-item">
   <div class="input">
-    <input type="checkbox" class="custom-control-input" id="customCheck1">
-    <span class="todo-title" [ngClass]="{'todo-complete': item.completed}">
-      {{ item.title }}
-    </span>
+    <input type="checkbox" class="custom-control-input" id="customCheck1" (click)="completeItem()" [checked]="item.completed"/>
+      <span class="todo-title" [ngClass]="{'todo-complete': item.completed}">
+        {{ item.title }}
+      </span>
   </div>
   <button type="button" class="btn btn-danger" (click)="removeItem()">Delete</button>
 </div>

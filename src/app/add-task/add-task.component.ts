@@ -7,7 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class AddTaskComponent implements OnInit {
   @Output() submit: EventEmitter<string> = new EventEmitter<string>();
-  title = 'add your task';
+  title = '';
 
   constructor() { }
 
